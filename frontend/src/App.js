@@ -4,10 +4,8 @@ import AboutUs from "./pages/AboutUsPage";
 
 function App() {
   return (
-    // Thêm basename để SPA biết app chạy ở sub-path
-    <Router basename="/vuonuomthuavan/home">
+    <Router>
       <Routes>
-        {/* Trang home */}
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
       </Routes>
