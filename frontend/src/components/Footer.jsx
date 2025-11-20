@@ -9,7 +9,7 @@ const Footer = () => {
       textAlign: "center",
       marginTop: "20px"
     }}>
-      © {new Date().getFullYear()} Tạp Hoá Thuận An. All rights reserved.
+      © {new Date().getFullYear()} Vườn ươm Thừa Vân. All rights reserved.
     </footer>
   );
 };

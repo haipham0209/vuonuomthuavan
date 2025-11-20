@@ -1,0 +1,114 @@
+.contact-store {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f6fa;
+}
+
+/* Hero Section */
+.hero-section {
+  margin-top: 0.1em;
+  height: 400px;
+  position: relative;
+  /* background: url('/images/store-hero.jpg') center center/cover no-repeat; */
+  background: url("../images/store-images/store-hero.jpg") center center/cover no-repeat;
+
+}
+
+
+
+.hero-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-section .hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Info Cards */
+.info-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+}
+
+.info-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.info-icon {
+  font-size: 2rem;
+  color: #28a745;
+}
+
+/* Map */
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: 15px;
+}
+
+/* Form Card */
+.card form .form-control {
+  border-radius: 10px;
+}
+
+.card form button {
+  border-radius: 10px;
+  padding: 10px 30px;
+}
+
+
+.hero-cta {
+  display: inline-block;
+  border-bottom: 1px solid white;
+  padding: 15px 40px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+  /* background: linear-gradient(135deg, #28a745, #218838); */
+  border-radius: 0px;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+.hero-cta:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.35);
+  /* background: linear-gradient(135deg, #218838, #28a745); */
+}
+
+.hero-ctb {
+  display: inline-block;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  padding: 15px 40px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #000000;
+  /* background: linear-gradient(135deg, #28a745, #218838); */
+  border-radius: 0px;
+  text-decoration: none;
+  /* box-shadow: 0 8px 20px rgba(0,0,0,0.3); */
+  transition: all 0.3s ease;
+}
+
+.hero-ctb:hover {
+  transform: translateY(-3px) scale(1.05);
+  /* box-shadow: 0 12px 25px rgba(0,0,0,0.35); */
+  /* background: linear-gradient(135deg, #218838, #28a745); */
+}
