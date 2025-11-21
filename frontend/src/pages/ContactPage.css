@@ -1,7 +1,4 @@
-.contact-store {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f5f6fa;
-}
+
 
 /* Hero Section */
 .hero-section {
@@ -9,10 +6,16 @@
   height: 400px;
   position: relative;
   /* background: url('/images/store-hero.jpg') center center/cover no-repeat; */
-  background: url("../images/store-images/store-hero.jpg") center center/cover no-repeat;
+  background: url("/src/assets/images/about-us/back-ground.jpg") center center/cover no-repeat;
 
 }
 
+.hero-section {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
 
 
 .hero-section .overlay {

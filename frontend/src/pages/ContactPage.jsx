@@ -10,10 +10,9 @@ const ContactStore = () => {
       <div className="hero-section text-center text-white d-flex align-items-center justify-content-center">
         <div className="overlay"></div>
         <div className="hero-content">
-          <h1 className="fw-bold mb-3">Contact Tap Hoa Thua Van</h1>
-          <p className="fs-5 mb-4">We’re here to assist you with any questions or orders.</p>
+          <h1 className="fw-bold mb-3">Liên hệ vườn ươm Thừa Vân</h1>
           <a href="tel:0976131715" className="hero-cta">
-            Call Now: 0976-131-715
+            Gọi ngay: 039-571-4571
           </a>
 
         </div>
@@ -29,7 +28,7 @@ const ContactStore = () => {
                 <i className="bi bi-geo-alt-fill info-icon mb-3"></i>
                 <Card.Title className="fw-bold">Address</Card.Title>
                 <Card.Text>Hiep Vinh 1, Canh Vinh, Van Canh, Binh Dinh</Card.Text>
-                <a href="https://www.google.com/maps/place/C%E1%BB%ADa+H%C3%A0ng+T%E1%BA%A1p+H%C3%B3a+Th%E1%BB%ABa+V%C3%A2n/@13.7367325,109.0832254,17.78z/data=!4m14!1m7!3m6!1s0x6000efd154d2ff97:0xf599352d0191bbc7!2zVOG6oXAgSG_DoSA4MSAoVEjhu7BDIFBI4bqoTSBWSeG7hlQgTkFNKQ!8m2!3d34.7058952!4d135.4362754!16s%2Fg%2F11ncdc_799!3m5!1s0x316f118e939df8e5:0x920162b8af53ec8f!8m2!3d13.736501!4d109.0851665!16s%2Fg%2F11b67gdbds?entry=ttu&g_ep=EgoyMDI1MTAxMy4wIKXMDSoASAFQAw%3D%3D" className="hero-ctb">
+                <a href="https://www.google.com/maps/place/13%C2%B044'10.3%22N+109%C2%B005'20.7%22E/@13.736196,109.0884473,252m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d13.736196!4d109.089091?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D" className="hero-ctb">
                   View on Map
                 </a>
               </Card.Body>
@@ -48,16 +47,6 @@ const ContactStore = () => {
               </Card.Body>
             </Card>
           </Col>
-
-          <Col md={4}>
-            <Card className="info-card text-center h-100 shadow-sm border-0">
-              <Card.Body>
-                <i className="bi bi-clock-fill info-icon mb-3"></i>
-                <Card.Title className="fw-bold">Opening Hours</Card.Title>
-                <Card.Text>Monday – Sunday: 7:00 AM – 10:00 PM</Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
         </Row>
 
         {/* Embedded Google Map */}
@@ -71,7 +60,7 @@ const ContactStore = () => {
                 style={{ border: 0 }}
                 allowFullScreen=""
                 loading="lazy"
-                title="Tap Hoa Thua Van Map"
+                title="Vườn ươm Thừa Vân Map"
               ></iframe>
             </div>
           </Col>
