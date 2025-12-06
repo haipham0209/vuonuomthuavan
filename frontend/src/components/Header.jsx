@@ -4,7 +4,7 @@ import "./Header.css";
 
 const menuItems = [
   { title: "Trang chủ", to: "/trang-chu" },
-  { title: "Sản phẩm", to: "/cay-giong" },
+  { title: "Cây giống", to: "/cay-giong" },
   { title: "Về chúng tôi", to: "/ve-chung-toi" },
   { title: "Tin tức", to: "/tin-tuc" },
   { title: "Liên hệ", to: "/lien-he" },
@@ -27,7 +27,7 @@ const Header = () => {
       <header className="header">
         <div className="header‐inner">
           <Link to="/trang-chu" className="header-logo">
-            Vườn Ươm Thừa Vân
+            <img src= "/logo.png" alt="Vườn Ươm Thừa Vân" style={{ height: "50px" }} />
           </Link>
 
           <nav className="nav-links">
