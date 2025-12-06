@@ -40,9 +40,9 @@ const ContactStore = () => {
               <Card.Body>
                 <i className="bi bi-telephone-fill info-icon mb-3"></i>
                 <Card.Title className="fw-bold">Phone</Card.Title>
-                <Card.Text>0976-131-715</Card.Text>
+                <Card.Text>039-571-4571</Card.Text>
                 <a href="tel:0976131715" className="hero-ctb">
-                  Call Now: 0976-131-715
+                  Call Now: 039-571-4571
                 </a>
               </Card.Body>
             </Card>
