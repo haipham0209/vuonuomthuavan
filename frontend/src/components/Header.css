@@ -1,5 +1,16 @@
-/* Header.css */
+/* Header.css - Đã Dọn Dẹp và Sắp Xếp Lại */
 
+/* --- 1. BIẾN VÀ THIẾT LẬP CHUNG (GLOBAL) --- */
+:root {
+    --color-primary-dark: #2e7d32; /* Xanh lá đậm cho Mobile Menu */
+    --color-text-link: rgb(0, 93, 151); /* Màu xanh dương cho Desktop link */
+}
+
+Header a {
+    text-decoration: none;
+}
+
+/* --- 2. HEADER CONTAINER (DESKTOP & CHUNG) --- */
 .header {
     width: 100%;
     background: #fdfdfd;
@@ -11,32 +22,25 @@
     height: 90px;
 }
 
-.header‐inner {
+.header-inner { /* Đã sửa lỗi chính tả header‐inner */
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    align-items: center; /* căn giữa theo dọc */
+    align-items: center; 
     justify-content: space-between;
-    height: 100%; /* để căn giữa theo height của header */
+    height: 100%; 
 }
 
-.header-logo {
-    color: rgb(0, 93, 151);
-    font-size: 24px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
+/* --- 3. DESKTOP NAV (MẶC ĐỊNH) --- */
 .nav-links {
-    font-size: 22px;
     display: flex;
     align-items: center;
     gap: 28px;
 }
 
 .nav-link {
-    color: rgb(0, 93, 151);
+    color: var(--color-text-link);
     text-decoration: none;
     font-size: 20px;
     font-weight: 500;
@@ -44,92 +48,114 @@
     transition: color 0.25s;
 }
 
+/* Hiệu ứng Active Desktop */
 .nav-link.active {
-  position: relative;
-  font-weight: 600;
-  border-bottom: 2px solid #132414;
+    position: relative;
+    font-weight: 600;
+    color: var(--color-primary-dark);
+    border-bottom: 2px solid var(--color-primary-dark);
 }
 
 .nav-link.active::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -4px; /* cách chữ 1 chút */
-  transform: translateX(-50%);
-  width: 60%;      /* độ rộng ánh sáng */
-  height: 6px;     /* độ dày ánh sáng */
-  background: radial-gradient(circle, rgba(255,255,200,0.6) 0%, rgba(255,255,200,0) 80%);
-  border-radius: 50%;
-  filter: blur(6px);
-  z-index: -1;
-  animation: glowPulse 1.5s infinite;
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -4px; 
+    transform: translateX(-50%);
+    width: 60%;
+    height: 6px; 
+    background: radial-gradient(circle, rgba(255, 255, 200, 0.6) 0%, rgba(255, 255, 200, 0) 80%);
+    border-radius: 50%;
+    filter: blur(6px);
+    z-index: -1;
+    animation: glowPulse 1.5s infinite;
 }
 
 @keyframes glowPulse {
-  0%,100% { opacity: 0.6; transform: translateX(-50%) scale(1); }
-  50% { opacity: 0.9; transform: translateX(-50%) scale(1.1); }
+    0%, 100% { opacity: 0.6; transform: translateX(-50%) scale(1); }
+    50% { opacity: 0.9; transform: translateX(-50%) scale(1.1); }
 }
 
-
+/* --- 4. MOBILE MENU & BACKDROP (Style chung cho Menu) --- */
 .hamburger-btn {
-    display: none;
-    font-size: 24px;
-    color: rgb(0, 93, 151);
+    display: none; /* Mặc định ẩn trên desktop */
+    font-size: 28px;
+    color: var(--color-primary-dark);
     background: none;
     border: none;
     cursor: pointer;
+    line-height: 1;
+}
+
+.mobile-menu-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    transition: opacity 0.35s ease;
 }
 
 .mobile-menu {
     position: fixed;
     top: 0;
-    right: -300px;
+    right: -260px;
     width: 260px;
     height: 100%;
-    background: #2e7d32;
-    padding-top: 60px;
+    background: var(--color-primary-dark);
+    padding-top: 90px;
     transition: right 0.35s ease;
-    box-shadow: -3px 0 6px rgba(0, 0, 0, 0.2);
+    box-shadow: -3px 0 10px rgba(0, 0, 0, 0.4);
+    z-index: 1000;
 }
 
 .mobile-menu.open {
     right: 0;
-    z-index: 1000;
 }
 
 .mobile-menu ul {
     list-style: none;
-    padding: 0 16px;
+    padding: 0;
     margin: 0;
 }
 
 .mobile-menu li {
-    margin: 16px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.mobile-menu a {
+.mobile-nav-link { /* Link trong menu mobile */
+    display: block;
     color: white;
     font-size: 18px;
     text-decoration: none;
     font-weight: 500;
+    padding: 16px 20px;
+    transition: background-color 0.2s;
 }
 
-Header a {
-    text-decoration: none;
+.mobile-nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive breakpoint */
+/* Hiển thị trạng thái active trong Mobile Menu */
+.mobile-nav-link.active {
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffeb3b; 
+}
+
+
+/* --- 5. RESPONSIVE BREAKPOINT (CUSTOM CHO MOBILE) --- */
 @media (max-width: 758px) {
+    /* Ẩn menu desktop */
     .nav-links {
         display: none;
     }
 
+    /* Hiện nút hamburger */
     .hamburger-btn {
         display: block;
     }
-
-    Header a {
-        text-decoration: none;
-    }
-
 }

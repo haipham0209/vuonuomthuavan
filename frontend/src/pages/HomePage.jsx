@@ -5,7 +5,7 @@ import './HomePage.css';
 // Dữ liệu giả định: ĐÃ BỔ SUNG THÊM CÂY
 const allProducts = [
   // --- CÂY ĂN QUẢ ---
-  { id: 1, name: "Cây Sa Pô Chê", category: "Cây ăn quả", price: "3Giá sỉ", image: "assets/images/products/product_sapoche.jpg" },
+  { id: 1, name: "Cây Sa Pô Chê", category: "Cây ăn quả", price: "Giá sỉ", image: "assets/images/products/product_sapoche.jpg" },
   { id: 5, name: "Ổi Ruby", category: "Cây ăn quả", price: "Giá sỉ", image: "assets/images/products/product_oi.jpg" },
   { id: 9, name: "Cây Xoài Cát Hòa Lộc", category: "Cây ăn quả", price: "Giá sỉ", image: "assets/images/products/product_xoai.jpg" },
   { id: 10, name: "Cây Mít Tố Nữ", category: "Cây ăn quả", price: "Giá sỉ", image: "assets/images/products/product_mit.jpg" },
@@ -119,7 +119,7 @@ const HomePage = () => {
             {tabCategories.map((category) => (
               <span
                 key={category}
-                className={`tab ${activeTab === category ? "active" : ""}`}
+                className={`tab my-1 ${activeTab === category ? "active" : ""}`}
                 onClick={() => handleTabClick(category)}
               >
                 {category}
@@ -187,11 +187,19 @@ const HomePage = () => {
             <div className="map-placeholder">
               <iframe
                 title="Vị trí Vườn ươm Thừa Vân"
-                src="https://www.google.co.jp/maps/place/V%C6%B0%E1%BB%9Dn+%C6%B0%C6%A1m+Th%E1%BB%ABa+V%C3%A2n/@13.7355699,109.0872533,249m/data=!3m2!1e3!4b1!4m6!3m5!1s0x316f11001dd72e85:0x2ee0e09532d720e1!8m2!3d13.7355686!4d109.087897!16s%2Fg%2F11yr_ll6q5?entry=ttu&g_ep=EgoyMDI1MTIwMi4wIKXMDSoASAFQAw%3D%3D"
+                // Thay thế URL giả định bằng URL mã nhúng thực tế của Google Maps
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1514.2902684295082!2d109.08744286739405!3d13.735383058181808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x316f11001dd72e85%3A0x2ee0e09532d720e1!2zVsaw4budbiDGsMahbSBUaOG7q2EgVsOibg!5e1!3m2!1svi!2sjp!4v1764996472370!5m2!1svi!2sjp"
+
+                // SỬA LỖI 1: Thay thế style="border:0;" bằng style={{ border: 0 }}
+                style={{ border: 0 }}
+
+                // SỬA LỖI 2: Sử dụng cú pháp camelCase và giá trị số/chuỗi cho width/height
                 width="100%"
                 height="100%"
-                style={{ border: 0 }}
-                allowFullScreen=""
+
+                // SỬA LỖI 3: Thuộc tính HTML allowfullscreen phải là allowFullScreen trong JSX
+                allowFullScreen={true} // hoặc chỉ allowFullScreen="" nếu không muốn dùng boolean
+
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
