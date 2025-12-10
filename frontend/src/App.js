@@ -17,6 +17,7 @@ function App() {
     <Router>
       <Layout>
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/trang-chu" element={<Home />} />
           <Route path="/ve-chung-toi" element={<AboutUs />} />
           <Route path="/lien-he" element={<ContactPage />} />

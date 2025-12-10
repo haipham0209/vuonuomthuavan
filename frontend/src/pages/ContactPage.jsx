@@ -11,7 +11,7 @@ const ContactStore = () => {
         <div className="overlay"></div>
         <div className="hero-content">
           <h1 className="fw-bold mb-3">Liên hệ vườn ươm Thừa Vân</h1>
-          <a href="tel:0976131715" className="hero-cta">
+          <a href="tel:0395714571" className="hero-cta">
             Gọi ngay: 039-571-4571
           </a>
 
@@ -41,7 +41,7 @@ const ContactStore = () => {
                 <i className="bi bi-telephone-fill info-icon mb-3"></i>
                 <Card.Title className="fw-bold">Phone</Card.Title>
                 <Card.Text>039-571-4571</Card.Text>
-                <a href="tel:0976131715" className="hero-ctb">
+                <a href="tel:0395714571" className="hero-ctb">
                   Call Now: 039-571-4571
                 </a>
               </Card.Body>
