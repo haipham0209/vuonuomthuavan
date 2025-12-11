@@ -4,7 +4,7 @@ import "./Header.css";
 
 const menuItems = [
     { title: "Trang chủ", to: "/trang-chu" },
-    { title: "Cây giống", to: "/cay-giong" },
+    // { title: "Cây giống", to: "/cay-giong" },
     { title: "Về chúng tôi", to: "/ve-chung-toi" },
     { title: "Tin tức", to: "/tin-tuc" },
     { title: "Liên hệ", to: "/lien-he" },

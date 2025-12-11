@@ -361,7 +361,7 @@
 
     /* 3. FEATURED PRODUCTS (Desktop: 4 cột) */
     .product-list {
-        grid-template-columns: repeat(4, 1fr); /* 4 cột trên desktop */
+        grid-template-columns: repeat(2, 1fr); /* 4 cột trên desktop */
     }
 
     /* 4. SERVICES (Desktop: 3 cột) */

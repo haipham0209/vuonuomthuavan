@@ -5,28 +5,28 @@ import './HomePage.css';
 // Dữ liệu giả định: ĐÃ BỔ SUNG THÊM CÂY
 const allProducts = [
   // --- CÂY ĂN QUẢ ---
-  { id: 1, name: "Cây Sa Pô Chê", category: "Cây ăn quả", price: "Giá sỉ", image: "assets/images/products/product_sapoche.jpg" },
-  { id: 5, name: "Ổi Ruby", category: "Cây ăn quả", price: "Giá sỉ", image: "assets/images/products/product_oi.jpg" },
-  { id: 9, name: "Cây Xoài Cát Hòa Lộc", category: "Cây ăn quả", price: "Giá sỉ", image: "assets/images/products/product_xoai.jpg" },
-  { id: 10, name: "Cây Mít Tố Nữ", category: "Cây ăn quả", price: "Giá sỉ", image: "assets/images/products/product_mit.jpg" },
+  // { id: 1, name: "Cây Sa Pô Chê", category: "Cây ăn quả", price: "Giá sỉ", image: "assets/images/products/product_sapoche.jpg" },
+  // { id: 5, name: "Ổi Ruby", category: "Cây ăn quả", price: "Giá sỉ", image: "assets/images/products/product_oi.jpg" },
+  // { id: 9, name: "Cây Xoài Cát Hòa Lộc", category: "Cây ăn quả", price: "Giá sỉ", image: "assets/images/products/product_xoai.jpg" },
+  // { id: 10, name: "Cây Mít Tố Nữ", category: "Cây ăn quả", price: "Giá sỉ", image: "assets/images/products/product_mit.jpg" },
 
-  // --- CÂY CẢNH ---
-  { id: 2, name: "Cây Vạn Tuế", category: "Cây cảnh", price: "Giá sỉ", image: "assets/images/products/product_vantu.jpg" },
-  { id: 4, name: "Cây Cọ Mỹ", category: "Cây cảnh", price: "Giá sỉ", image: "assets/images/products/product_comy.jpg" },
-  { id: 11, name: "Cây Kim Tiền", category: "Cây cảnh", price: "Giá sỉ", image: "assets/images/products/product_kimtien.jpg" },
-  { id: 12, name: "Cây Lưỡi Hổ", category: "Cây cảnh", price: "Giá sỉ", image: "assets/images/products/product_luoiho.jpg" },
+  // // --- CÂY CẢNH ---
+  // { id: 2, name: "Cây Vạn Tuế", category: "Cây cảnh", price: "Giá sỉ", image: "assets/images/products/product_vantu.jpg" },
+  // { id: 4, name: "Cây Cọ Mỹ", category: "Cây cảnh", price: "Giá sỉ", image: "assets/images/products/product_comy.jpg" },
+  // { id: 11, name: "Cây Kim Tiền", category: "Cây cảnh", price: "Giá sỉ", image: "assets/images/products/product_kimtien.jpg" },
+  // { id: 12, name: "Cây Lưỡi Hổ", category: "Cây cảnh", price: "Giá sỉ", image: "assets/images/products/product_luoiho.jpg" },
 
-  // --- CÂY CÔNG TRÌNH ---
-  { id: 3, name: "Cây Dầu", category: "Cây công trình", price: "Giá liên hệ", image: "assets/images/products/product_dau.jpg" },
-  { id: 6, name: "Bàng Đài Loan", category: "Cây công trình", price: "Giá liên hệ", image: "assets/images/products/product_bang.jpg" },
-  { id: 13, name: "Cây Phượng Vĩ", category: "Cây công trình", price: "Giá liên hệ", image: "assets/images/products/product_phuongvi.jpg" },
-  { id: 14, name: "Cây Sà Cừ", category: "Cây công trình", price: "Giá liên hệ", image: "assets/images/products/product_sacu.jpg" },
+  // // --- CÂY CÔNG TRÌNH ---
+  // { id: 3, name: "Cây Dầu", category: "Cây công trình", price: "Giá liên hệ", image: "assets/images/products/product_dau.jpg" },
+  // { id: 6, name: "Bàng Đài Loan", category: "Cây công trình", price: "Giá liên hệ", image: "assets/images/products/product_bang.jpg" },
+  // { id: 13, name: "Cây Phượng Vĩ", category: "Cây công trình", price: "Giá liên hệ", image: "assets/images/products/product_phuongvi.jpg" },
+  // { id: 14, name: "Cây Sà Cừ", category: "Cây công trình", price: "Giá liên hệ", image: "assets/images/products/product_sacu.jpg" },
 
   // --- CÂY TRỒNG RỪNG ---
   { id: 7, name: "Cây Keo Lai", category: "Cây trồng rừng", price: "Giá sỉ", image: "assets/images/products/product_keo_lai.jpg" },
   { id: 8, name: "Cây Keo Lá Tràm", category: "Cây trồng rừng", price: "Giá sỉ", image: "assets/images/products/product_keo_tram.jpg" },
-  { id: 15, name: "Cây Bạch Đàn", category: "Cây trồng rừng", price: "Giá sỉ", image: "assets/images/products/product_bachdan.jpg" },
-  { id: 16, name: "Cây Thông", category: "Cây trồng rừng", price: "Giá sỉ", image: "assets/images/products/product_thong.jpg" },
+  // { id: 15, name: "Cây Bạch Đàn", category: "Cây trồng rừng", price: "Giá sỉ", image: "assets/images/products/product_bachdan.jpg" },
+  // { id: 16, name: "Cây Thông", category: "Cây trồng rừng", price: "Giá sỉ", image: "assets/images/products/product_thong.jpg" },
 ];
 
 const services = [
@@ -36,7 +36,8 @@ const services = [
 ];
 
 // --- CẬP NHẬT THỨ TỰ TAB: "Cây trồng rừng" lên đầu tiên ---
-const tabCategories = ["Cây trồng rừng", "Cây ăn quả", "Cây cảnh", "Cây công trình"];
+// const tabCategories = ["Cây trồng rừng", "Cây ăn quả", "Cây cảnh", "Cây công trình"];
+const tabCategories = ["Cây trồng rừng"];
 
 const HomePage = () => {
   // Mặc định, activeTab sẽ là "Cây trồng rừng"
@@ -86,10 +87,10 @@ const HomePage = () => {
       <section className="hero-section">
         <div className="hero-content container">
           <h1 className="hero-title">Vườn ươm Thừa Vân – Nâng tầm không gian xanh của bạn</h1>
-          <p className="hero-subtitle">Cung cấp cây giống chất lượng, đa dạng chủng loại, dịch vụ tận tâm.</p>
-          <Link to="/cay-giong" className="btn btn-primary hero-cta">
+          <p className="hero-subtitle">Cung cấp cây giống chất lượng, dịch vụ tận tâm.</p>
+          {/* <Link to="/cay-giong" className="btn btn-primary hero-cta">
             XEM SẢN PHẨM NGAY
-          </Link>
+          </Link> */}
         </div>
       </section>
 
@@ -98,7 +99,7 @@ const HomePage = () => {
         <div className="container about-inner">
           <div className="about-text">
             <h2 className="section-heading">Giới thiệu ngắn</h2>
-            <p>Chào mừng bạn đến với Vườn ươm Thừa Vân, nơi ươm mầm sự sống xanh. Chúng tôi chuyên cung cấp cây giống đa dạng, từ cây ăn quả, cây cảnh đến cây công trình, cam kết chất lượng và dịch vụ hậu mãi chu đáo.</p>
+            <p>Vườn ươm cây giống Thừa Vân, tọa độ tại QL 19c, cách thành phố Quy Nhơn( tỉnh Gia Lai) 20km về phía Tây Nam, nơi ươm mầm sự sống xanh. Chúng tôi chuyên cung cấp cây giống chất lượng.</p>
             <Link to="/ve-chung-toi" className="btn btn-secondary about-cta">
               Tìm hiểu về chúng tôi
             </Link>

@@ -22,7 +22,7 @@ function App() {
           <Route path="/ve-chung-toi" element={<AboutUs />} />
           <Route path="/lien-he" element={<ContactPage />} />
           <Route path="/tin-tuc" element={<NewsPage />} />
-          <Route path="/cay-giong" element={<ProductsPage />} />
+          {/* <Route path="/cay-giong" element={<ProductsPage />} /> */}
         </Routes>
       </Layout>
     </Router>

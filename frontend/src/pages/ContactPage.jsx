@@ -27,7 +27,7 @@ const ContactStore = () => {
               <Card.Body>
                 <i className="bi bi-geo-alt-fill info-icon mb-3"></i>
                 <Card.Title className="fw-bold">Address</Card.Title>
-                <Card.Text>Hiep Vinh 1, Canh Vinh, Van Canh, Binh Dinh</Card.Text>
+                <Card.Text>QL 19C, xã Canh Vinh, tỉnh Gia Lai</Card.Text>
                 <a href="https://www.google.com/maps/place/13%C2%B044'10.3%22N+109%C2%B005'20.7%22E/@13.736196,109.0884473,252m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d13.736196!4d109.089091?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D" className="hero-ctb">
                   View on Map
                 </a>
