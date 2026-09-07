@@ -4,35 +4,16 @@ import './HomePage.css';
 
 // Dữ liệu giả định: ĐÃ BỔ SUNG THÊM CÂY
 const allProducts = [
-  // --- CÂY ĂN QUẢ ---
-  // { id: 1, name: "Cây Sa Pô Chê", category: "Cây ăn quả", price: "Giá sỉ", image: "assets/images/products/product_sapoche.jpg" },
-  // { id: 5, name: "Ổi Ruby", category: "Cây ăn quả", price: "Giá sỉ", image: "assets/images/products/product_oi.jpg" },
-  // { id: 9, name: "Cây Xoài Cát Hòa Lộc", category: "Cây ăn quả", price: "Giá sỉ", image: "assets/images/products/product_xoai.jpg" },
-  // { id: 10, name: "Cây Mít Tố Nữ", category: "Cây ăn quả", price: "Giá sỉ", image: "assets/images/products/product_mit.jpg" },
-
-  // // --- CÂY CẢNH ---
-  // { id: 2, name: "Cây Vạn Tuế", category: "Cây cảnh", price: "Giá sỉ", image: "assets/images/products/product_vantu.jpg" },
-  // { id: 4, name: "Cây Cọ Mỹ", category: "Cây cảnh", price: "Giá sỉ", image: "assets/images/products/product_comy.jpg" },
-  // { id: 11, name: "Cây Kim Tiền", category: "Cây cảnh", price: "Giá sỉ", image: "assets/images/products/product_kimtien.jpg" },
-  // { id: 12, name: "Cây Lưỡi Hổ", category: "Cây cảnh", price: "Giá sỉ", image: "assets/images/products/product_luoiho.jpg" },
-
-  // // --- CÂY CÔNG TRÌNH ---
-  // { id: 3, name: "Cây Dầu", category: "Cây công trình", price: "Giá liên hệ", image: "assets/images/products/product_dau.jpg" },
-  // { id: 6, name: "Bàng Đài Loan", category: "Cây công trình", price: "Giá liên hệ", image: "assets/images/products/product_bang.jpg" },
-  // { id: 13, name: "Cây Phượng Vĩ", category: "Cây công trình", price: "Giá liên hệ", image: "assets/images/products/product_phuongvi.jpg" },
-  // { id: 14, name: "Cây Sà Cừ", category: "Cây công trình", price: "Giá liên hệ", image: "assets/images/products/product_sacu.jpg" },
-
   // --- CÂY TRỒNG RỪNG ---
   { id: 7, name: "Cây Keo Lai", category: "Cây trồng rừng", price: "Giá sỉ", image: "assets/images/products/product_keo_lai.jpg" },
   { id: 8, name: "Cây Keo Lá Tràm", category: "Cây trồng rừng", price: "Giá sỉ", image: "assets/images/products/product_keo_tram.jpg" },
-  // { id: 15, name: "Cây Bạch Đàn", category: "Cây trồng rừng", price: "Giá sỉ", image: "assets/images/products/product_bachdan.jpg" },
-  // { id: 16, name: "Cây Thông", category: "Cây trồng rừng", price: "Giá sỉ", image: "assets/images/products/product_thong.jpg" },
 ];
 
 const services = [
-  { icon: '🌿', title: "Thiết Kế Cảnh Quan", description: "Tạo nên không gian xanh ấn tượng cho dự án của bạn.", link: "/dich-vu/thiet-ke" },
-  { icon: '💚', title: "Chăm Sóc Cây", description: "Dịch vụ bảo dưỡng và chăm sóc cây chuyên nghiệp.", link: "/dich-vu/cham-soc" },
-  { icon: '💡', title: "Tư Vấn Trồng Trọt", description: "Hỗ trợ kỹ thuật từ A-Z cho mọi loại cây trồng.", link: "/dich-vu/tu-van" },
+  { icon: '🌿', title: "Cung cấp cây giống lâm nghiệp", description: "", link: "/dich-vu/thiet-ke" },
+  { icon: '🌿', title: "Cây giống keo trồng rừng", description: "", link: "/dich-vu/cham-soc" },
+  { icon: '🌿', title: "Cây giống keo lai", description: "", link: "/dich-vu/tu-van" },
+
 ];
 
 // --- CẬP NHẬT THỨ TỰ TAB: "Cây trồng rừng" lên đầu tiên ---
@@ -86,7 +67,7 @@ const HomePage = () => {
       {/* 1. HERO SECTION */}
       <section className="hero-section">
         <div className="hero-content container">
-          <h1 className="hero-title">Vườn ươm Thừa Vân – Nâng tầm không gian xanh của bạn</h1>
+          <h1 className="hero-title">Vườn ươm Thừa Vân</h1>
           <p className="hero-subtitle">Cung cấp cây giống chất lượng, dịch vụ tận tâm.</p>
           {/* <Link to="/cay-giong" className="btn btn-primary hero-cta">
             XEM SẢN PHẨM NGAY
@@ -139,9 +120,9 @@ const HomePage = () => {
                 <h3 className="product-name">{product.name}</h3>
                 <p className="product-category">{product.category}</p>
                 <p className="product-price">{product.price}</p>
-                <Link to={`/cay-giong/${product.id}`} className="btn btn-sm btn-outline">
+                {/* <Link to={`/cay-giong/${product.id}`} className="btn btn-sm btn-outline">
                   XEM CHI TIẾT
-                </Link>
+                </Link> */}
               </div>
             ))}
             {displayProducts.length === 0 && (
@@ -149,11 +130,11 @@ const HomePage = () => {
             )}
           </div>
 
-          <div className="text-center mt-4">
+          {/* <div className="text-center mt-4">
             <Link to="/cay-giong" className="btn btn-primary-outline">
               XEM TẤT CẢ CÂY GIỐNG
             </Link>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -208,7 +189,7 @@ const HomePage = () => {
           </div>
 
           {/* Ý kiến khách hàng */}
-          <div className="testimonials">
+          {/* <div className="testimonials">
             <h2 className="section-sub-heading">Khách hàng nói gì về chúng tôi</h2>
             <div className="testimonial-slider">
               <blockquote className="testimonial-card active">
@@ -224,7 +205,7 @@ const HomePage = () => {
               <textarea placeholder="Nội dung tư vấn" rows="3"></textarea>
               <button type="submit" className="btn btn-primary">GỬI YÊU CẦU</button>
             </form>
-          </div>
+          </div> */}
         </div>
       </section>
 

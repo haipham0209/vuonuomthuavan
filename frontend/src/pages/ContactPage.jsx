@@ -26,10 +26,10 @@ const ContactStore = () => {
             <Card className="info-card text-center h-100 shadow-sm border-0">
               <Card.Body>
                 <i className="bi bi-geo-alt-fill info-icon mb-3"></i>
-                <Card.Title className="fw-bold">Address</Card.Title>
+                <Card.Title className="fw-bold">Địa chỉ</Card.Title>
                 <Card.Text>QL 19C, xã Canh Vinh, tỉnh Gia Lai</Card.Text>
                 <a href="https://www.google.com/maps/place/13%C2%B044'10.3%22N+109%C2%B005'20.7%22E/@13.736196,109.0884473,252m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d13.736196!4d109.089091?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D" className="hero-ctb">
-                  View on Map
+                  Xem trên Google Map
                 </a>
               </Card.Body>
             </Card>
@@ -39,10 +39,10 @@ const ContactStore = () => {
             <Card className="info-card text-center h-100 shadow-sm border-0">
               <Card.Body>
                 <i className="bi bi-telephone-fill info-icon mb-3"></i>
-                <Card.Title className="fw-bold">Phone</Card.Title>
+                <Card.Title className="fw-bold">Điện thoại</Card.Title>
                 <Card.Text>039-571-4571</Card.Text>
                 <a href="tel:0395714571" className="hero-ctb">
-                  Call Now: 039-571-4571
+                  Gọi ngay: 039-571-4571
                 </a>
               </Card.Body>
             </Card>
@@ -70,23 +70,23 @@ const ContactStore = () => {
         <Row className="justify-content-center">
           <Col md={8}>
             <Card className="shadow-sm border-0 p-4">
-              <Card.Title className="fw-bold mb-4 text-center">Send Us a Message</Card.Title>
+              <Card.Title className="fw-bold mb-4 text-center">Gửi tin nhắn cho chúng tôi</Card.Title>
               <Form>
                 <Row className="mb-3">
                   <Col md={6}>
                     <Form.Group controlId="formName">
                       <Form.Label>
-                        Your Name <span className="text-danger">*</span>
+                        Tên <span className="text-danger">*</span>
                       </Form.Label>
-                      <Form.Control type="text" placeholder="Jack Bauer" required />
+                      <Form.Control type="text" placeholder="" required />
                     </Form.Group>
                   </Col>
                   <Col md={6}>
                     <Form.Group controlId="formEmail">
                       <Form.Label>
-                        Email Address
+                        Email
                       </Form.Label>
-                      <Form.Control type="email" placeholder="abc@gmail.com" required />
+                      <Form.Control type="email" placeholder="" required />
                     </Form.Group>
                   </Col>
                 </Row>
@@ -95,28 +95,28 @@ const ContactStore = () => {
                   <Col md={6}>
                     <Form.Group controlId="formPhone">
                       <Form.Label>
-                        Phone Number <span className="text-danger">*</span>
+                        Số ĐT <span className="text-danger">*</span>
                       </Form.Label>
-                      <Form.Control type="text" placeholder="080-xxx-xxx" required />
+                      <Form.Control type="text" placeholder="" required />
                     </Form.Group>
                   </Col>
                   <Col md={6}>
                     <Form.Group controlId="formSubject">
-                      <Form.Label>Subject</Form.Label>
-                      <Form.Control type="text" placeholder="Title" />
+                      <Form.Label>Tiêu đề</Form.Label>
+                      <Form.Control type="text" placeholder="" />
                     </Form.Group>
                   </Col>
                 </Row>
 
                 <Form.Group className="mb-3" controlId="formMessage">
                   <Form.Label>
-                    Your Message <span className="text-danger">*</span>
+                    Nội dung <span className="text-danger">*</span>
                   </Form.Label>
-                  <Form.Control as="textarea" rows={5} placeholder="Question here" required />
+                  <Form.Control as="textarea" rows={5} placeholder="" required />
                 </Form.Group>
 
                 <div className="text-center">
-                  <Button variant="success" size="lg">Send Message</Button>
+                  <Button variant="success" size="lg">Gửi</Button>
                 </div>
               </Form>
 
